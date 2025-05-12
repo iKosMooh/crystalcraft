@@ -1,0 +1,162 @@
+.footerContainer {
+    position: relative;
+    background: var(--background);
+    padding: 4rem 2rem;
+    margin-top: 5rem;
+  }
+  
+  .topBorder {
+    height: 4px;
+    background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .footerContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+  
+  .logoSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-right: 2rem;
+    border-right: 2px solid #2E2B8A;
+    margin: 0 10%;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.2));
+    border-radius: 2%;
+  }
+  
+  .logoText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .tagline {
+    color: #818CF8;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  
+  .version {
+    color: #6366F1;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .copyMessage{
+    color:purple;
+    background-color: rgba(0,0,0,0.8);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -15px ;
+  }
+
+  .version a{
+    color: #6366F1;
+  }
+  
+  .contentSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .linksContainer {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .linkGroup {
+    flex: 1;
+  }
+  
+  .sectionTitle {
+    color: #E0E7FF;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #6366F1;
+  }
+  
+  .link {
+    color: #A5B4FC;
+    display: block;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link:hover {
+    color: #6366F1;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .socialIcon:hover {
+    transform: scale(1.15);
+  }
+  
+  .credits {
+    color: #818CF8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+  }
+  
+  .legalText {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    opacity: 0.8;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footerContent {
+      flex-direction: column;
+    }
+    
+    .logoSection {
+      border-right: none;
+      padding-right: 0;
+      border-bottom: 2px solid #2E2B8A;
+      padding-bottom: 2rem;
+    }
+  }

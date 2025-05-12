@@ -1,0 +1,190 @@
+/* styles.module.css */
+.container {
+    padding: 1rem;
+    background: linear-gradient(45deg, var(--background), var(--primary) 150%);
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem auto 2rem;
+    padding: 1rem;
+    border-radius: 40px;
+    color: #f2c0ff;
+    width: fit-content;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
+}
+
+.cardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vipCard {
+    background: rgba(var(--background-rgb), 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    color: #f2c0ff;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.cardHeader {
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.vipImage {
+    position: relative;
+    margin: 0 auto 1rem;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.imageGlow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.5;
+
+}
+
+.vipTitleContainer {
+    position: relative;
+    z-index: 2;
+}
+
+.popularBadge {
+    position: absolute;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    margin-left: -15%;
+}
+
+.benefitsList {
+    padding: 1rem;
+}
+
+.benefitItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.benefitText {
+    font-size: 0.85rem;
+    margin-right: 1rem;
+    flex: 1;
+}
+
+.statusIndicator {
+    flex-shrink: 0;
+}
+
+.checkMark, .xMark {
+    font-size: 1.2rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.checkMark {
+    background: rgba(0,255,0,0.1);
+}
+
+.xMark {
+    background: rgba(255,0,0,0.1);
+    color: #ff4444;
+}
+
+.specialValue {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+.cardFooter {
+    padding: 1.5rem;
+    background: rgba(0,0,0,0.05);
+}
+
+.activationBox h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.activationItem {
+    font-size: 0.85rem;
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rewardBox {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .cardsContainer {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    .benefitsList {
+        max-height: 400px;
+    }
+    
+    .benefitText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .vipCard {
+        border-radius: 15px;
+    }
+    
+    .cardHeader {
+        padding: 1rem;
+    }
+    
+    .benefitItem {
+        padding: 0.6rem;
+    }
+}
