@@ -1,3 +1,5 @@
+This is a website developed for a minecraft server called CrystalCraft which I created and developed. The page focuses on the front-end
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
